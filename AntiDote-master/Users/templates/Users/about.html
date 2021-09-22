@@ -1,0 +1,143 @@
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<html lang="en">
+   <link href="{% static 'Users/blog-post.css' %}" rel="stylesheet">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Antidote</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-post.css" rel="stylesheet">
+
+</head>
+
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          {% if user.is_authenticated %}
+     <a class="navbar-brand" href="{% url 'base' %}">
+      {% else %}
+      <a class="navbar-brand" href="{% url 'index' %}">
+      {% endif %}
+
+     <img src="{% static 'users2/logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    
+    <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item">
+        <a class="nav-link" href="{% url 'describe_prediction' %}">Predictions</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'describe_report' %}">Reports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'describe_prescription' %}">Prescriptions</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="{% url 'login' %}">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'reg' %}">Register</a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+<body>
+
+  
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">About Us</h1>
+
+        <!-- Preview Image -->
+<!--         <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+ -->
+        <hr>
+
+        <!-- Post Content -->
+        <p class="lead">Antidote is a ‘Disease Prediction and Patient Management System’ software. People are reluctant to visit the hospitals due to the fear of contracting COVID-19 while hospitals too have closed-out patient wards for treatment. Apart from this, health officials and the government have continuously been advising the general public to avoid visiting the hospitals except for emergencies, resulting in these fears being compounded.</p>
+
+        <p>This portal provides an e-consultation facility to the patients. The patients can sign up at the portal. After logging in the patients would observe there are various sections that cater to their needs. A section for predicting the disease that they are likely to suffer from where they can fill a form by providing their details along with the symptoms witnessed. Based on the result of the prediction, the patients can search for the specialised doctors and share the prediction results with the selected doctor. The patients would also be provided with the section where they can upload their previous medical reports, thereby keeping a track of their medical history which often gets misplaced due to the conventional way of storing the reports in files. </p>
+
+          <p> <h1>Product Features</h1><br>
+
+          <h4>Registration/Login:</h4> The patients and the doctors need to register on the portal before they can start accessing the functionalities which are available to them. After login, they will be assigned a token to make sure that they are authenticated users.
+<br>
+          <h4>Disease prediction and Doctor suggestion : </h4>Patients fill their symptoms in a form and according to that the system predicts the disease through a machine learning model.
+<br>
+          The <b>models</b> are trained using various algorithms such as:
+          <br><b>Decision Tree algorithm -</b> It is used for classification as well as regression tasks.It is a flowchart-like structure where each internal node represents a test on the various symptoms entered by the user and each leaf node represents the class label i.e. the diseases.
+          <br><b>Random Forest algorithm - </b>It is similar to the decision tree algorithm. The difference lies in the process of finding the root node(start point) and splitting the feature nodes here the symptoms randomly.The accuracy of the results lie in the number of trees formed.
+          <br><b>Logistic Regression - </b>It is most suited for binary classification though it can be used for multinomial classification. It makes use of a logistic function i.e. softmax function to categorise the input data. It uses a linear model similar to linear regression to calculate the weights of each input feature and thereby producing a linear equation. The linear equation produced is then used to calculate logits which are scores. These scores are then used by a softmax function to calculate the probabilities. These probabilities are then used by cross-entropy function to calculate the distance from the target classes available. The one which results in the minimum distance is our predicted target class.
+          <br><b>Naive Bayes algorithm - </b>It is a classifier which works on Bayes theorem.The prediction of membership probabilities is made for every class of disease such as the given set of symptoms is associated with a given disease (eg: fungal infection).
+<br>The result of each prediction is displayed on the screen. The disease class which is predicted by a majority of the models is the final result.
+The patient can search for the concerned doctor within our database or any other doctor based on their location.
+<br>
+          <h4>Uploading medical reports: </h4> Patients can keep a track of their medical history by uploading their reports along with the details such as previous appointments, doctor details etc on our  platform which they can view anytime.This also provides an added benefit of forwarding the reports to the doctor if requested. Accessing the past reports and managing the present ones would be easier.
+<br>
+          <h4>Appointment Confirmation:</h4> The doctor can set up an appointment with the patient for further consultation and diagnosis if he/she feels the need for the same. This will also replace the manual procedures of recording the appointment dates thereby increasing the reliability , efficiency and performance of the product.
+<br>
+          <h4>Prescription: </h4>Doctors can send a prescription which can then be viewed by the patient. Depending upon the prediction, the doctor can decide whether to keep the further follow ups in an offline mode by fixing the appointment through the portal and asking the patient to follow the prescription till the next check-up or a course of the medicine for a certain period suggested is enough to recover from the disease.
+<br>
+          <h4>Edit profile:</h4> The patients and the doctors can edit the information given at the time of registration by navigating to the ‘Edit profile’ tab and saving the changes which updates the information stored in the database.
+<br>
+          <h4>Question and Answer(QnA):</h4> The patients and doctors are provided with a chat functionality for any active treatment. This facility helps the concerned patient and doctor to communicate with one another when it comes to fixing appointment dates or telling the precautions that the patient needs to take in case of emergency.
+<br>
+</p>
+
+        <hr>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+<br>
+<footer class="container">
+  <p>&copy; Antidote {% now "Y" %}</p>
+</footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>

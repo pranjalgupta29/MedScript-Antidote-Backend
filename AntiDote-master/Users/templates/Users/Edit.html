@@ -1,0 +1,50 @@
+{% extends "Users/layout.html" %}
+{% load crispy_forms_tags %}
+{% block body %}
+    
+<br>
+    <h1 class="heading">Edit Profile</h1>
+    <span>
+    <button class="btn btn-primary" id="changepass"><a href="{% url 'Change_Password' %}" style="color: white">Change Password</a></button>
+    {% if user.is_doctor %}
+    <button class="btn btn-primary" id="update">Update Location</button>
+    </span>
+<br>
+    <script>
+        function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showPosition(position) {
+            document.querySelector("input[name=lat]").value = (position.coords.latitude).toFixed(6);
+            document.querySelector("input[name=lon]").value = (position.coords.longitude).toFixed(6);
+            alert(`Updated Coords are: ${(position.coords.latitude).toFixed(6)}  ${(position.coords.longitude).toFixed(6)}`);
+        }
+
+        document.addEventListener("DOMContentLoaded", function(){
+           document.querySelector("#update").addEventListener("click", function (){
+               getLocation()
+           })
+        })
+    </script>
+
+    {% endif %}
+    <br>
+
+    <form action="", method="POST">
+        {% csrf_token %}
+        {{form|crispy}}
+        <input type="submit" value="Save Changes" class="btn btn-primary"/>
+    </form>
+
+        {% if message %}
+            <script>alert("{{ message }}")</script>
+        {% endif %}
+        {% if alert %}
+            <script>alert("{{ alert }}")</script>
+        {% endif %}
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "Users/layout.html" %}
+
+{% block body %}
+    <br><br>
+    <h1 class="heading">New Patient Requests</h1>
+    <br>
+<div class="row">
+{% for Treat in Treatments %}
+  <div class="col-sm-6">
+    <div class="card text-center">
+          <div class="card-header">
+    <h5 class="card-title"><strong>Patient Name : </strong>{{ Treat.Patient.Name }}</h5>
+  </div>
+      <div class="card-body">
+        <h5 class="card-title"><strong>Disease : </strong>{{ Treat.Disease }}</h5>
+        <form action="{% url 'not_new' Treat.id %}" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Accept" name="Accept" class="btn btn-primary">
+            <input type="submit" value="Reject" class="btn btn-primary">
+        </form>
+      </div>
+    </div>
+    <br>
+  </div>
+  <br>
+    {% endfor %}
+{% endblock %}

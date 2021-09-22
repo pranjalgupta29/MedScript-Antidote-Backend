@@ -1,0 +1,36 @@
+{% extends "Users/layout.html" %}
+{% load crispy_forms_tags %}
+{% block body %}
+    <br><br>
+
+    <div class="card text-center">
+  <h3 class="card-header">Predicted Disease</h3>
+  <div class="card-body">
+    <h4 class="card-title"><strong>{{ tr.Disease.Name }}</strong></h4><br>
+    <p class="card-text"> Don't want to select a Doctor</p>
+    <a href="{% url 'Delete_Treatment' tr.id %}" class="btn btn-primary btn-sm">click here</a>
+
+  </div>
+</div>
+
+
+ <br><br>
+    <h1 class="heading">Choose Doctor</h1>
+     <div class="row">
+    {% for doc in Docs %}
+   
+  <div class="col-sm-6">
+    <div class="card">
+        <h5 class="card-header">{{doc.Name}}</h5>
+      <div class="card-body">
+        <h6 class="card-title"><strong>Address:  </strong>{{ doc.Address }}</h6>
+        <h6 class="card-title"><strong>Qualification:  </strong>{{ doc.Qualification }}</h6>
+        <h6 class="card-title"> <strong>Contact:  </strong>{{ doc.contact }}</h6>
+         <a href="{% url 'Add_doc' tr.id doc.id %}" class="btn btn-primary btn-sm">Select</a>
+      </div>
+    </div>
+</div>
+ 
+    {% endfor %}
+     </div>
+{% endblock %}

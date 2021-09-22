@@ -1,0 +1,32 @@
+treatment display                                                           ############ done
+
+add prescription                                                            ############ done
+
+add appoinment                                                              ############ done
+
+change/ forgot password                                                     ############ done
+
+active and new patients treatments on single page using js
+
+add password validation                                                     ############ did this just uncomment the lines in forms.py
+
+if doctor denies treatment request. User should get an alert                ############ added
+
+password changed alert                                                      ############ done
+
+
+
+
+Gps coordinates of doctor during registration                               ############ done
+Gps coordinates of patient during seraching                                 ############ done
+
+question , asnwer fields in model and a is_answered field                   ############ done
+option to answer the question                                               ############ done
+option to delete the question if is_answered                                ############ done
+
+display selected symptoms                                                   ############ done
+
+
+Store Files on Google Drive
+
+Https security

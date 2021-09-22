@@ -1,0 +1,6 @@
+{% load crispy_forms_tags %}
+<form action="/edit_Presc/{{id}}" method="POST">
+    {% csrf_token%}
+    {{ presc|crispy }}
+    <input class="btn btn-primary" type="submit" value="Save">
+</form>

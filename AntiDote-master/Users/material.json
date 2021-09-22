@@ -1,0 +1,2371 @@
+[
+{
+ "model": "Users.user",
+ "pk": 19,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$7VZTv9T2fetI$czu6VafeyB/H4ptkcJnTeix5/7SI4Uz0qG0Mp0rx3ZA=",
+  "last_login": "2020-12-03T07:19:25.339Z",
+  "is_superuser": true,
+  "email": "mahajanparth19@gmail.com",
+  "is_doctor": true,
+  "is_patient": false,
+  "is_staff": true,
+  "is_active": true,
+  "date_joined": "2020-09-24T16:38:37.511Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 20,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$LaoSURjdSI2b$YbZ4e6I4DYLdEdEjkPcaX17zzWU4TbJlH5jKttQoMjE=",
+  "last_login": "2020-12-04T06:14:18.402Z",
+  "is_superuser": false,
+  "email": "shyam@gmail.com",
+  "is_doctor": false,
+  "is_patient": true,
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-09-25T14:15:01.285Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 21,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$b92lRGlLwRJD$ZyQ2ixL/XY2JdeNYH7uxAqlRtBfZaFZWrjur3hlmXsg=",
+  "last_login": "2020-12-01T07:28:59.933Z",
+  "is_superuser": false,
+  "email": "hermione@gmail.com",
+  "is_doctor": false,
+  "is_patient": true,
+  "is_staff": false,
+  "is_active": false,
+  "date_joined": "2020-09-25T14:15:50.129Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 23,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$uNzFoTlwqVnl$vvB68v7Gs/W42fUpFUggzc01lh+CuzYETrhHfn0/ciU=",
+  "last_login": null,
+  "is_superuser": false,
+  "email": "pmahajan_be18@thapar.edu",
+  "is_doctor": true,
+  "is_patient": false,
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-09-25T14:21:21.939Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 24,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$ND6xMQW4O7yR$IQo0kvieGeOiBZ+TsBr69hrfs6Us6G8K+fQ7mG8K8c8=",
+  "last_login": "2020-12-03T05:41:54.785Z",
+  "is_superuser": false,
+  "email": "reena@gmail.com",
+  "is_doctor": true,
+  "is_patient": false,
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-09-25T14:24:42.223Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 25,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$XaAWjKFfjQW8$WGaZktGQk1IuKADxAo+4ePtBrZvjr6DK3ABeNFw+dSU=",
+  "last_login": "2020-12-03T05:56:15.419Z",
+  "is_superuser": false,
+  "email": "rajkumar@gmail.com",
+  "is_doctor": true,
+  "is_patient": false,
+  "is_staff": true,
+  "is_active": true,
+  "date_joined": "2020-09-25T14:25:07.988Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 26,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$2f3wFLoIwejd$0GUF+4yqh6X1Ax2jjYTlI3NlHWcN7muOlN3o87d21pM=",
+  "last_login": "2020-12-02T18:00:52.258Z",
+  "is_superuser": false,
+  "email": "gupta@gmail.com",
+  "is_doctor": true,
+  "is_patient": false,
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-09-26T12:11:08.028Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 27,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$QuLCceRf8Bbb$jgQFClHQLRyq2N0oy22MBgGvPbafCtavnCT4AFpvDNk=",
+  "last_login": "2020-11-05T18:02:03.685Z",
+  "is_superuser": false,
+  "email": "jbcjksd@gmail.com",
+  "is_doctor": false,
+  "is_patient": true,
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-10-29T08:35:42.186Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 28,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$F54GEwwE4d5w$skrnl/JONjK3Jy2gUPPl+dm3YP1YFL33y9V7JirikXY=",
+  "last_login": "2020-12-02T17:53:01.188Z",
+  "is_superuser": false,
+  "email": "goyal@gmail.com",
+  "is_doctor": true,
+  "is_patient": false,
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-10-29T08:36:24.667Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 33,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$GFD7sZsGqKjQ$ZQSocyG+v9TiJeVttPZVIHspBRuJzrk+wHetxvCI0T4=",
+  "last_login": "2020-12-02T18:00:22.380Z",
+  "is_superuser": false,
+  "email": "arun@gmail.com",
+  "is_doctor": true,
+  "is_patient": false,
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-11-11T14:34:55.537Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 34,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$sgbO9OGjsNQF$rrRoiZsdxtN9TG8wmcqnlOx21jMGJ1bl4FRp8ymI9Cc=",
+  "last_login": "2020-12-03T07:18:45.853Z",
+  "is_superuser": false,
+  "email": "anil@gmail.com",
+  "is_doctor": true,
+  "is_patient": false,
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-11-17T18:23:07.754Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 35,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$WTrjqNCicI0k$OhSIE635eopTOx3kKvyDwXWcson6P0wHWRPV4rk96eQ=",
+  "last_login": "2020-12-03T08:44:45.137Z",
+  "is_superuser": false,
+  "email": "ram@gmail.com",
+  "is_doctor": false,
+  "is_patient": true,
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-11-17T18:24:30.858Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 36,
+ "fields": {
+  "password": "pbkdf2_sha256$216000$bKQYkNB5f2f3$XhtODxPr6fZvemLNSahbSHC5drsMsGUvRDzLF2vWgBc=",
+  "last_login": "2020-11-19T08:37:20.018Z",
+  "is_superuser": false,
+  "email": "mengiamish@rediffmail.com",
+  "is_doctor": false,
+  "is_patient": true,
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-11-17T18:57:02.318Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 37,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$GGMVHrDU2gEq$o45U/OiQ5aKQtLfdhq5aqsFSkwbJkYNWe73t1lBJt2Y=",
+  "last_login": "2020-12-02T17:26:34.352Z",
+  "is_superuser": false,
+  "email": "jbcjksd1@gmail.com",
+  "is_doctor": false,
+  "is_patient": true,
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-12-02T17:25:18.826Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 38,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$bc8oFEywloZm$JNSLkMPNtFfCP6ByGFaPOf6P5MtmN9UhOYglTWr4Qlo=",
+  "last_login": "2020-12-02T17:31:16.716Z",
+  "is_superuser": false,
+  "email": "frodo11@gmail.com",
+  "is_doctor": false,
+  "is_patient": true,
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-12-02T17:28:20.758Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.user",
+ "pk": 39,
+ "fields": {
+  "password": "pbkdf2_sha256$180000$2DIHPucYeooT$GGugIm75jY4AAibphl0lJSij9jlMbtU6v66GPkAtH24=",
+  "last_login": "2020-12-04T08:26:51.158Z",
+  "is_superuser": false,
+  "email": "scna@gmail.com",
+  "is_doctor": false,
+  "is_patient": true,
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-12-04T08:25:44.678Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "Users.patient",
+ "pk": 6,
+ "fields": {
+  "user": 20,
+  "Name": "Shyam",
+  "Age": 21,
+  "Address": "47/18 New Pawan Nagar, Batala road, Amritsar",
+  "Gender": "Male"
+ }
+},
+{
+ "model": "Users.patient",
+ "pk": 7,
+ "fields": {
+  "user": 21,
+  "Name": "Hermione",
+  "Age": 21,
+  "Address": "Somewhere",
+  "Gender": "F"
+ }
+},
+{
+ "model": "Users.patient",
+ "pk": 8,
+ "fields": {
+  "user": 27,
+  "Name": "dscs",
+  "Age": 51,
+  "Address": "dsckicdjns",
+  "Gender": "male"
+ }
+},
+{
+ "model": "Users.patient",
+ "pk": 9,
+ "fields": {
+  "user": 34,
+  "Name": "qwerty",
+  "Age": 12,
+  "Address": "12",
+  "Gender": "Female"
+ }
+},
+{
+ "model": "Users.patient",
+ "pk": 10,
+ "fields": {
+  "user": 35,
+  "Name": "Ram",
+  "Age": 22,
+  "Address": "18/29 , New Trikuta Nagar, Jammu",
+  "Gender": "Male"
+ }
+},
+{
+ "model": "Users.patient",
+ "pk": 11,
+ "fields": {
+  "user": 36,
+  "Name": "Amish",
+  "Age": 12,
+  "Address": "12",
+  "Gender": "Male"
+ }
+},
+{
+ "model": "Users.patient",
+ "pk": 12,
+ "fields": {
+  "user": 37,
+  "Name": "jncj",
+  "Age": 85,
+  "Address": "slkacnlk",
+  "Gender": "Female"
+ }
+},
+{
+ "model": "Users.patient",
+ "pk": 13,
+ "fields": {
+  "user": 38,
+  "Name": "jdbs",
+  "Age": 54,
+  "Address": "ns dk",
+  "Gender": "Female"
+ }
+},
+{
+ "model": "Users.patient",
+ "pk": 14,
+ "fields": {
+  "user": 39,
+  "Name": "sdcs6",
+  "Age": 54,
+  "Address": ".msd",
+  "Gender": "Female"
+ }
+},
+{
+ "model": "Users.specialization",
+ "pk": 5,
+ "fields": {
+  "Name": "Neurologist"
+ }
+},
+{
+ "model": "Users.specialization",
+ "pk": 6,
+ "fields": {
+  "Name": "Dermatologist"
+ }
+},
+{
+ "model": "Users.specialization",
+ "pk": 7,
+ "fields": {
+  "Name": "Allergist"
+ }
+},
+{
+ "model": "Users.specialization",
+ "pk": 8,
+ "fields": {
+  "Name": "Rheumatologist"
+ }
+},
+{
+ "model": "Users.specialization",
+ "pk": 9,
+ "fields": {
+  "Name": "Gastroenterologist"
+ }
+},
+{
+ "model": "Users.specialization",
+ "pk": 10,
+ "fields": {
+  "Name": "Cardiologist"
+ }
+},
+{
+ "model": "Users.specialization",
+ "pk": 11,
+ "fields": {
+  "Name": "Infectious diseases"
+ }
+},
+{
+ "model": "Users.specialization",
+ "pk": 12,
+ "fields": {
+  "Name": "Orthopedist"
+ }
+},
+{
+ "model": "Users.specialization",
+ "pk": 13,
+ "fields": {
+  "Name": "Endocrinologist"
+ }
+},
+{
+ "model": "Users.specialization",
+ "pk": 14,
+ "fields": {
+  "Name": "Pulmonologist"
+ }
+},
+{
+ "model": "Users.specialization",
+ "pk": 15,
+ "fields": {
+  "Name": "Urologist"
+ }
+},
+{
+ "model": "Users.specialization",
+ "pk": 16,
+ "fields": {
+  "Name": "Paediatrician"
+ }
+},
+{
+ "model": "Users.specialization",
+ "pk": 17,
+ "fields": {
+  "Name": "General surgeon"
+ }
+},
+{
+ "model": "Users.doctor",
+ "pk": 1,
+ "fields": {
+  "user": 26,
+  "Name": "Dr. S.N GUPTA",
+  "Age": 31,
+  "Address": "Rudrapur, Uttarakhand",
+  "Gender": "Male",
+  "Specialization": 9,
+  "contact": 8146931837,
+  "Qualification": "Bachelor of Surgery",
+  "lat": "29.008657",
+  "lon": "79.382287"
+ }
+},
+{
+ "model": "Users.doctor",
+ "pk": 2,
+ "fields": {
+  "user": 34,
+  "Name": "Dr. Anil Gupta",
+  "Age": 35,
+  "Address": "Gandhi Nagar, Jammu, Jammu and Kashmir",
+  "Gender": "Male",
+  "Specialization": 9,
+  "contact": 8451236871,
+  "Qualification": "MBChB, MBBCh",
+  "lat": "32.714524",
+  "lon": "74.852962"
+ }
+},
+{
+ "model": "Users.doctor",
+ "pk": 3,
+ "fields": {
+  "user": 24,
+  "Name": "Dr. Reena Bhatia",
+  "Age": 36,
+  "Address": "2510, 3, Is, S W Gate, Bhushan Pura, Shastri Market, Shastri Market, Amritsar, Punjab",
+  "Gender": "Female",
+  "Specialization": 9,
+  "contact": 84512796510,
+  "Qualification": "BMBS, MBBS",
+  "lat": "31.633919",
+  "lon": "74.872249"
+ }
+},
+{
+ "model": "Users.doctor",
+ "pk": 4,
+ "fields": {
+  "user": 25,
+  "Name": "Dr. Rajkumar",
+  "Age": 45,
+  "Address": "H No T 14/2349, Gali, Near Tiwari, Ani/S, Lohgarh Gate, Shastri Market, Shastri Market, Amritsar, Punjab",
+  "Gender": "Male",
+  "Specialization": 9,
+  "contact": 9581231515,
+  "Qualification": "MBBS, Bachelor of Surgery",
+  "lat": "31.633919",
+  "lon": "74.899281"
+ }
+},
+{
+ "model": "Users.doctor",
+ "pk": 5,
+ "fields": {
+  "user": 28,
+  "Name": "DR. K.K GOYAL",
+  "Age": 50,
+  "Address": "House no- 60, 7-8, Dividing Rd, Block A, Sector 8, Faridabad, Haryana",
+  "Gender": "Male",
+  "Specialization": 9,
+  "contact": 8145769325,
+  "Qualification": "Bachelor of Medicine",
+  "lat": "28.363850",
+  "lon": "77.322904"
+ }
+},
+{
+ "model": "Users.doctor",
+ "pk": 6,
+ "fields": {
+  "user": 33,
+  "Name": "Dr Arun Kumar Sharma",
+  "Age": 49,
+  "Address": "A-22, Durga Mandir Gali, Rudrapur, Uttarakhand",
+  "Gender": "Male",
+  "Specialization": 9,
+  "contact": 8745965845,
+  "Qualification": "B. Tech",
+  "lat": "28.970218",
+  "lon": "79.372231"
+ }
+},
+{
+ "model": "Users.reports",
+ "pk": 3,
+ "fields": {
+  "name": "Hii",
+  "Description": "Hello",
+  "Patient": 8,
+  "filepath": "files/Untitled1.cpp",
+  "Doctors": [
+   3
+  ]
+ }
+},
+{
+ "model": "Users.reports",
+ "pk": 6,
+ "fields": {
+  "name": "bnv",
+  "Description": "vjv",
+  "Patient": 6,
+  "filepath": "files/ACOdyssey.ini",
+  "Doctors": [
+   1
+  ]
+ }
+},
+{
+ "model": "Users.reports",
+ "pk": 7,
+ "fields": {
+  "name": "jbkj",
+  "Description": "something",
+  "Patient": 7,
+  "filepath": "files/ACOdyssey_cLEjFWU.ini",
+  "Doctors": []
+ }
+},
+{
+ "model": "Users.reports",
+ "pk": 9,
+ "fields": {
+  "name": "khjkdcs",
+  "Description": "ksdnc",
+  "Patient": 6,
+  "filepath": "files/ACOdyssey_5pnWFFm.ini",
+  "Doctors": [
+   1
+  ]
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 8,
+ "fields": {
+  "Name": "Dimorphic hemmorhoids(piles)",
+  "Specialization": 17
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 9,
+ "fields": {
+  "Name": "Varicose veins",
+  "Specialization": 6
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 10,
+ "fields": {
+  "Name": "Hyperthyroidism",
+  "Specialization": 13
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 11,
+ "fields": {
+  "Name": "Chronic cholestasis",
+  "Specialization": 9
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 12,
+ "fields": {
+  "Name": "Hepatitis D",
+  "Specialization": 9
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 13,
+ "fields": {
+  "Name": "Alcoholic hepatitis",
+  "Specialization": 9
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 14,
+ "fields": {
+  "Name": "Hepatitis E",
+  "Specialization": 9
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 15,
+ "fields": {
+  "Name": "Typhoid",
+  "Specialization": 17
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 16,
+ "fields": {
+  "Name": "Drug Reaction",
+  "Specialization": 7
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 17,
+ "fields": {
+  "Name": "Hypertension",
+  "Specialization": 10
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 18,
+ "fields": {
+  "Name": "Pneumonia",
+  "Specialization": 14
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 19,
+ "fields": {
+  "Name": "Tuberculosis",
+  "Specialization": 14
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 20,
+ "fields": {
+  "Name": "Hypoglycemia",
+  "Specialization": 13
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 21,
+ "fields": {
+  "Name": "Dengue",
+  "Specialization": 11
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 22,
+ "fields": {
+  "Name": "Migraine",
+  "Specialization": 5
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 23,
+ "fields": {
+  "Name": "Fungal infection",
+  "Specialization": 6
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 24,
+ "fields": {
+  "Name": "Arthritis",
+  "Specialization": 8
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 25,
+ "fields": {
+  "Name": "hepatitis A",
+  "Specialization": 9
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 26,
+ "fields": {
+  "Name": "Paralysis (brain hemorrhage)",
+  "Specialization": 5
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 27,
+ "fields": {
+  "Name": "Impetigo",
+  "Specialization": 6
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 28,
+ "fields": {
+  "Name": "Acne",
+  "Specialization": 6
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 29,
+ "fields": {
+  "Name": "Malaria",
+  "Specialization": 11
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 30,
+ "fields": {
+  "Name": "Cervical spondylosis",
+  "Specialization": 5
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 31,
+ "fields": {
+  "Name": "Chicken pox",
+  "Specialization": 11
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 32,
+ "fields": {
+  "Name": "Common Cold",
+  "Specialization": 16
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 33,
+ "fields": {
+  "Name": "Hypothyroidism",
+  "Specialization": 13
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 34,
+ "fields": {
+  "Name": "Gastroenteritis",
+  "Specialization": 9
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 35,
+ "fields": {
+  "Name": "Psoriasis",
+  "Specialization": 6
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 36,
+ "fields": {
+  "Name": "Urinary tract infection",
+  "Specialization": 15
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 37,
+ "fields": {
+  "Name": "AIDS",
+  "Specialization": 11
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 38,
+ "fields": {
+  "Name": "Hepatitis C",
+  "Specialization": 9
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 39,
+ "fields": {
+  "Name": "Allergy",
+  "Specialization": 7
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 40,
+ "fields": {
+  "Name": "Hepatitis B",
+  "Specialization": 9
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 41,
+ "fields": {
+  "Name": "Peptic ulcer disease",
+  "Specialization": 9
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 42,
+ "fields": {
+  "Name": "Heart attack",
+  "Specialization": 10
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 43,
+ "fields": {
+  "Name": "Bronchial Asthma",
+  "Specialization": 14
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 44,
+ "fields": {
+  "Name": "Diabetes",
+  "Specialization": 13
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 45,
+ "fields": {
+  "Name": "Jaundice",
+  "Specialization": 9
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 46,
+ "fields": {
+  "Name": "(vertigo) Paroymsal  Positional Vertigo",
+  "Specialization": 5
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 47,
+ "fields": {
+  "Name": "Osteoarthristis",
+  "Specialization": 12
+ }
+},
+{
+ "model": "Users.disease",
+ "pk": 48,
+ "fields": {
+  "Name": "GERD",
+  "Specialization": 9
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 1,
+ "fields": {
+  "Name": "Itching"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 2,
+ "fields": {
+  "Name": "Skin Rash"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 3,
+ "fields": {
+  "Name": "Nodal Skin Eruptions"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 4,
+ "fields": {
+  "Name": "Continuous Sneezing"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 5,
+ "fields": {
+  "Name": "Shivering"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 6,
+ "fields": {
+  "Name": "Chills"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 7,
+ "fields": {
+  "Name": "Joint Pain"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 8,
+ "fields": {
+  "Name": "Stomach Pain"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 9,
+ "fields": {
+  "Name": "Acidity"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 10,
+ "fields": {
+  "Name": "Ulcers On Tongue"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 11,
+ "fields": {
+  "Name": "Muscle Wasting"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 12,
+ "fields": {
+  "Name": "Vomiting"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 13,
+ "fields": {
+  "Name": "Burning Micturition"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 14,
+ "fields": {
+  "Name": "Spotting  Urination"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 15,
+ "fields": {
+  "Name": "Fatigue"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 16,
+ "fields": {
+  "Name": "Weight Gain"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 17,
+ "fields": {
+  "Name": "Anxiety"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 18,
+ "fields": {
+  "Name": "Cold Hands And Feets"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 19,
+ "fields": {
+  "Name": "Mood Swings"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 20,
+ "fields": {
+  "Name": "Weight Loss"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 21,
+ "fields": {
+  "Name": "Restlessness"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 22,
+ "fields": {
+  "Name": "Lethargy"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 23,
+ "fields": {
+  "Name": "Patches In Throat"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 24,
+ "fields": {
+  "Name": "Irregular Sugar Level"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 25,
+ "fields": {
+  "Name": "Cough"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 26,
+ "fields": {
+  "Name": "High Fever"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 27,
+ "fields": {
+  "Name": "Sunken Eyes"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 28,
+ "fields": {
+  "Name": "Breathlessness"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 29,
+ "fields": {
+  "Name": "Sweating"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 30,
+ "fields": {
+  "Name": "Dehydration"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 31,
+ "fields": {
+  "Name": "Indigestion"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 32,
+ "fields": {
+  "Name": "Headache"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 33,
+ "fields": {
+  "Name": "Yellowish Skin"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 34,
+ "fields": {
+  "Name": "Dark Urine"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 35,
+ "fields": {
+  "Name": "Nausea"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 36,
+ "fields": {
+  "Name": "Loss Of Appetite"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 37,
+ "fields": {
+  "Name": "Pain Behind The Eyes"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 38,
+ "fields": {
+  "Name": "Back Pain"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 39,
+ "fields": {
+  "Name": "Constipation"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 40,
+ "fields": {
+  "Name": "Abdominal Pain"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 41,
+ "fields": {
+  "Name": "Diarrhoea"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 42,
+ "fields": {
+  "Name": "Mild Fever"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 43,
+ "fields": {
+  "Name": "Yellow Urine"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 44,
+ "fields": {
+  "Name": "Yellowing Of Eyes"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 45,
+ "fields": {
+  "Name": "Acute Liver Failure"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 46,
+ "fields": {
+  "Name": "Fluid Overload"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 47,
+ "fields": {
+  "Name": "Swelling Of Stomach"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 48,
+ "fields": {
+  "Name": "Swelled Lymph Nodes"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 49,
+ "fields": {
+  "Name": "Malaise"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 50,
+ "fields": {
+  "Name": "Blurred And Distorted Vision"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 51,
+ "fields": {
+  "Name": "Phlegm"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 52,
+ "fields": {
+  "Name": "Throat Irritation"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 53,
+ "fields": {
+  "Name": "Redness Of Eyes"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 54,
+ "fields": {
+  "Name": "Sinus Pressure"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 55,
+ "fields": {
+  "Name": "Runny Nose"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 56,
+ "fields": {
+  "Name": "Congestion"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 57,
+ "fields": {
+  "Name": "Chest Pain"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 58,
+ "fields": {
+  "Name": "Weakness In Limbs"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 59,
+ "fields": {
+  "Name": "Fast Heart Rate"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 60,
+ "fields": {
+  "Name": "Pain During Bowel Movements"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 61,
+ "fields": {
+  "Name": "Pain In Anal Region"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 62,
+ "fields": {
+  "Name": "Bloody Stool"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 63,
+ "fields": {
+  "Name": "Irritation In Anus"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 64,
+ "fields": {
+  "Name": "Neck Pain"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 65,
+ "fields": {
+  "Name": "Dizziness"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 66,
+ "fields": {
+  "Name": "Cramps"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 67,
+ "fields": {
+  "Name": "Bruising"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 68,
+ "fields": {
+  "Name": "Obesity"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 69,
+ "fields": {
+  "Name": "Swollen Legs"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 70,
+ "fields": {
+  "Name": "Swollen Blood Vessels"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 71,
+ "fields": {
+  "Name": "Puffy Face And Eyes"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 72,
+ "fields": {
+  "Name": "Enlarged Thyroid"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 73,
+ "fields": {
+  "Name": "Brittle Nails"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 74,
+ "fields": {
+  "Name": "Swollen Extremeties"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 75,
+ "fields": {
+  "Name": "Excessive Hunger"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 76,
+ "fields": {
+  "Name": "Extra Marital Contacts"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 77,
+ "fields": {
+  "Name": "Drying And Tingling Lips"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 78,
+ "fields": {
+  "Name": "Slurred Speech"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 79,
+ "fields": {
+  "Name": "Knee Pain"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 80,
+ "fields": {
+  "Name": "Hip Joint Pain"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 81,
+ "fields": {
+  "Name": "Muscle Weakness"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 82,
+ "fields": {
+  "Name": "Stiff Neck"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 83,
+ "fields": {
+  "Name": "Swelling Joints"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 84,
+ "fields": {
+  "Name": "Movement Stiffness"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 85,
+ "fields": {
+  "Name": "Spinning Movements"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 86,
+ "fields": {
+  "Name": "Loss Of Balance"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 87,
+ "fields": {
+  "Name": "Unsteadiness"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 88,
+ "fields": {
+  "Name": "Weakness Of One Body Side"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 89,
+ "fields": {
+  "Name": "Loss Of Smell"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 90,
+ "fields": {
+  "Name": "Bladder Discomfort"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 91,
+ "fields": {
+  "Name": "Foul Smell Of Urine"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 92,
+ "fields": {
+  "Name": "Continuous Feel Of Urine"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 93,
+ "fields": {
+  "Name": "Passage Of Gases"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 94,
+ "fields": {
+  "Name": "Internal Itching"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 95,
+ "fields": {
+  "Name": "Toxic Look (Typhos)"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 96,
+ "fields": {
+  "Name": "Depression"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 97,
+ "fields": {
+  "Name": "Irritability"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 98,
+ "fields": {
+  "Name": "Muscle Pain"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 99,
+ "fields": {
+  "Name": "Altered Sensorium"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 100,
+ "fields": {
+  "Name": "Red Spots Over Body"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 101,
+ "fields": {
+  "Name": "Belly Pain"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 102,
+ "fields": {
+  "Name": "Abnormal Menstruation"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 103,
+ "fields": {
+  "Name": "Dischromic  Patches"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 104,
+ "fields": {
+  "Name": "Watering From Eyes"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 105,
+ "fields": {
+  "Name": "Increased Appetite"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 106,
+ "fields": {
+  "Name": "Polyuria"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 107,
+ "fields": {
+  "Name": "Family History"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 108,
+ "fields": {
+  "Name": "Mucoid Sputum"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 109,
+ "fields": {
+  "Name": "Rusty Sputum"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 110,
+ "fields": {
+  "Name": "Lack Of Concentration"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 111,
+ "fields": {
+  "Name": "Visual Disturbances"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 112,
+ "fields": {
+  "Name": "Receiving Blood Transfusion"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 113,
+ "fields": {
+  "Name": "Receiving Unsterile Injections"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 114,
+ "fields": {
+  "Name": "Coma"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 115,
+ "fields": {
+  "Name": "Stomach Bleeding"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 116,
+ "fields": {
+  "Name": "Distention Of Abdomen"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 117,
+ "fields": {
+  "Name": "History Of Alcohol Consumption"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 118,
+ "fields": {
+  "Name": "Fluid Overload.1"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 119,
+ "fields": {
+  "Name": "Blood In Sputum"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 120,
+ "fields": {
+  "Name": "Prominent Veins On Calf"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 121,
+ "fields": {
+  "Name": "Palpitations"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 122,
+ "fields": {
+  "Name": "Painful Walking"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 123,
+ "fields": {
+  "Name": "Pus Filled Pimples"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 124,
+ "fields": {
+  "Name": "Blackheads"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 125,
+ "fields": {
+  "Name": "Scurring"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 126,
+ "fields": {
+  "Name": "Skin Peeling"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 127,
+ "fields": {
+  "Name": "Silver Like Dusting"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 128,
+ "fields": {
+  "Name": "Small Dents In Nails"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 129,
+ "fields": {
+  "Name": "Inflammatory Nails"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 130,
+ "fields": {
+  "Name": "Blister"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 131,
+ "fields": {
+  "Name": "Red Sore Around Nose"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 132,
+ "fields": {
+  "Name": "Yellow Crust Ooze"
+ }
+},
+{
+ "model": "Users.symptom",
+ "pk": 133,
+ "fields": {
+  "Name": "Prognosis"
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 1,
+ "fields": {
+  "Patient": 6,
+  "Doctor": 1,
+  "is_active": true,
+  "is_new": false,
+  "is_completed": false,
+  "Disease": 9,
+  "Prescription": "",
+  "Appointment": "2020-10-01",
+  "lat": null,
+  "lon": null,
+  "SymptomList": []
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 2,
+ "fields": {
+  "Patient": 6,
+  "Doctor": 3,
+  "is_active": true,
+  "is_new": false,
+  "is_completed": false,
+  "Disease": 12,
+  "Prescription": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "Appointment": "2020-10-01",
+  "lat": null,
+  "lon": null,
+  "SymptomList": []
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 4,
+ "fields": {
+  "Patient": 6,
+  "Doctor": 3,
+  "is_active": true,
+  "is_new": false,
+  "is_completed": false,
+  "Disease": 12,
+  "Prescription": "",
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": []
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 8,
+ "fields": {
+  "Patient": 6,
+  "Doctor": 3,
+  "is_active": true,
+  "is_new": false,
+  "is_completed": false,
+  "Disease": 28,
+  "Prescription": "",
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": [
+   1,
+   3,
+   5,
+   8,
+   11
+  ]
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 10,
+ "fields": {
+  "Patient": 6,
+  "Doctor": 4,
+  "is_active": true,
+  "is_new": false,
+  "is_completed": false,
+  "Disease": 25,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": []
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 12,
+ "fields": {
+  "Patient": 8,
+  "Doctor": 4,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 25,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": []
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 13,
+ "fields": {
+  "Patient": 8,
+  "Doctor": 3,
+  "is_active": true,
+  "is_new": false,
+  "is_completed": false,
+  "Disease": 44,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": []
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 14,
+ "fields": {
+  "Patient": 8,
+  "Doctor": 4,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 25,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": []
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 15,
+ "fields": {
+  "Patient": 6,
+  "Doctor": 6,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 25,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": []
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 16,
+ "fields": {
+  "Patient": 6,
+  "Doctor": 4,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 14,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": []
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 18,
+ "fields": {
+  "Patient": 6,
+  "Doctor": 3,
+  "is_active": true,
+  "is_new": false,
+  "is_completed": false,
+  "Disease": 14,
+  "Prescription": "",
+  "Appointment": "2020-11-24",
+  "lat": null,
+  "lon": null,
+  "SymptomList": [
+   17,
+   62,
+   67,
+   99,
+   102
+  ]
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 23,
+ "fields": {
+  "Patient": 6,
+  "Doctor": 4,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 25,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": [
+   9,
+   17,
+   38,
+   45,
+   99
+  ]
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 24,
+ "fields": {
+  "Patient": 6,
+  "Doctor": 6,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 25,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": [
+   17,
+   38,
+   45,
+   99,
+   101
+  ]
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 27,
+ "fields": {
+  "Patient": 6,
+  "Doctor": 6,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 25,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": [
+   62,
+   90,
+   119,
+   124,
+   130
+  ]
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 35,
+ "fields": {
+  "Patient": 6,
+  "Doctor": 3,
+  "is_active": true,
+  "is_new": false,
+  "is_completed": false,
+  "Disease": 25,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": [
+   17,
+   38,
+   99,
+   101,
+   124
+  ]
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 36,
+ "fields": {
+  "Patient": 6,
+  "Doctor": 6,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 25,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": [
+   28,
+   50,
+   62,
+   73,
+   119
+  ]
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 46,
+ "fields": {
+  "Patient": 11,
+  "Doctor": null,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 8,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": [
+   17,
+   38,
+   45,
+   99,
+   101
+  ]
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 47,
+ "fields": {
+  "Patient": 11,
+  "Doctor": null,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 23,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": [
+   9,
+   40,
+   45,
+   99,
+   102
+  ]
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 48,
+ "fields": {
+  "Patient": 11,
+  "Doctor": null,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 23,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": [
+   9,
+   17,
+   45,
+   99,
+   102
+  ]
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 51,
+ "fields": {
+  "Patient": 6,
+  "Doctor": null,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 34,
+  "Prescription": "",
+  "Appointment": null,
+  "lat": "32.639375",
+  "lon": "74.899283",
+  "SymptomList": [
+   17,
+   38,
+   101
+  ]
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 52,
+ "fields": {
+  "Patient": 6,
+  "Doctor": null,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 34,
+  "Prescription": "",
+  "Appointment": null,
+  "lat": "31.639406",
+  "lon": "74.899300",
+  "SymptomList": [
+   90
+  ]
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 54,
+ "fields": {
+  "Patient": 6,
+  "Doctor": null,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 48,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": "31.639426",
+  "lon": "74.899360",
+  "SymptomList": [
+   9
+  ]
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 55,
+ "fields": {
+  "Patient": 6,
+  "Doctor": null,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 39,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": [
+   45
+  ]
+ }
+},
+{
+ "model": "Users.treatment",
+ "pk": 56,
+ "fields": {
+  "Patient": 6,
+  "Doctor": null,
+  "is_active": false,
+  "is_new": true,
+  "is_completed": false,
+  "Disease": 39,
+  "Prescription": null,
+  "Appointment": null,
+  "lat": null,
+  "lon": null,
+  "SymptomList": [
+   45
+  ]
+ }
+},
+{
+ "model": "Users.qna",
+ "pk": 1,
+ "fields": {
+  "Made_By": 24,
+  "Question": "Hello",
+  "Answer": "Hii",
+  "Is_Answered": true,
+  "Treatment": 18
+ }
+},
+{
+ "model": "Users.qna",
+ "pk": 2,
+ "fields": {
+  "Made_By": 20,
+  "Question": "Kaisa Hai",
+  "Answer": "",
+  "Is_Answered": false,
+  "Treatment": 18
+ }
+}
+]

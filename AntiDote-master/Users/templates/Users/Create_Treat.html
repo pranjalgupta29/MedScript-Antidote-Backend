@@ -1,0 +1,107 @@
+{% extends "Users/layout.html" %}
+{% load crispy_forms_tags %}
+{% block body %}
+    <h1 class="heading">Predict Disease</h1>
+    <hr>
+    <h1>Select your symptoms:</h1><h3>(minimum one)</h3><br>
+    <div style=" height: 32vmax ;">
+        <div style="width: 80vh ; float: left; overflow-y : scroll ; height: 100%;">
+            <form action="", method="POST">
+                {% csrf_token %}
+            {{ f|crispy }}
+        </div>
+
+        <div>
+            <h3> Your Selected Symptoms:</h3>
+            <div id="here" ></div>
+        </div>
+    </div>
+    <br><br>
+        <!--{{form|crispy}}-->
+        <input type="submit" id="su" value="Predict" class="btn btn-primary"/>
+    </form>
+
+    <script>
+        var checklist = []
+        var f = 0;
+        function func(check){            
+            if(check.checked){
+                name = (document.querySelector(`label[for=${check.id}]`).innerHTML).trim()
+                if(checklist.length == 5){
+                    check.checked = false
+                    alert("Cannot Select More Than 5");
+                }
+                else{
+                    checklist.push({id : check.value, name : name})
+                }
+            }
+            else{
+                name = (document.querySelector(`label[for=${check.id}]`).innerHTML).trim()
+                i = checklist.findIndex(a => a.id == check.value)
+                if (i > -1) {
+                    checklist.splice(i, 1);
+                }
+            }
+
+            // console.log(checklist)
+            li = []
+            checklist.forEach((ele) => {
+                li.push(ele.name)
+            })
+            li = li.sort()
+            text = "<ul> ";
+            for(i=0;i<li.length;i++){
+                text = text + "<li>" + li[i] + " </li>"
+            }
+            text = text + "</ul>"
+            document.querySelector("#here").innerHTML = text
+
+            if(checklist.length > 0 && f==0){
+                document.querySelector("#su").disabled = false;
+            }
+            else{
+                if(f != 0){
+                    alert("Cannot Submit Until Permssion is given");
+                }
+                document.querySelector("#su").disabled = true;
+            }
+        }
+
+
+        function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition,failed);
+                } else {
+                    alert("Geolocation is not supported by this browser.");
+                    f = 1;
+            }
+        }
+
+        function failed(){
+            alert("Please give permission to use location and refresh website");
+            f = 1;
+        }
+
+        function showPosition(position) {
+            document.querySelector("input[name=lat]").value = (position.coords.latitude).toFixed(6);
+            document.querySelector("input[name=lon]").value = (position.coords.longitude).toFixed(6);
+            alert(`Coords are: ${(position.coords.latitude).toFixed(6)}  ${(position.coords.longitude).toFixed(6)}`);
+        }
+
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector("#su").disabled = true;
+            getLocation()
+            document.querySelectorAll('input[type=checkbox]').forEach(check => {
+                check.checked = false;
+                check.addEventListener("change", function() {
+                func(check)
+                })
+            });
+            
+        })
+
+
+    </script>
+{% endblock %}

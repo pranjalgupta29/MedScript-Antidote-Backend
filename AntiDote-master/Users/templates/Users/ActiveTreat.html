@@ -1,0 +1,38 @@
+{% extends "Users/layout.html" %}
+
+{% block body %}
+    <br><br>
+    <h1 class="heading">Active Patients</h1>
+<br>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Patient's Name</th>
+      <th scope="col">Doctor's Name</th>
+      <th scope="col">Disease</th>
+      <th scope="col">Treatment Id</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for Treat in Treatments %}
+    
+    <tr>
+      <th scope="row">{{ Treat.Patient.Name }}</th>
+      <td>{{ Treat.Doctor.Name }}</td>
+      <td>{{Treat.Disease}}</td>
+      <td>{{Treat.id}}</td>
+      <td><a href="{% url 'Treat' Treat.id %}">View Treatment</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<!--     {% for Treat in Treatments %}
+        <a href="{% url 'Treat' Treat.id %}">{{Treat.id}}</a>
+        <h3>{{ Treat.Patient.Name }} and {{ Treat.Doctor.Name }}</h3>
+    {% endfor %}
+ -->
+    <br><br>
+    </p>
+
+{% endblock %}

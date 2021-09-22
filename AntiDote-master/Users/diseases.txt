@@ -1,0 +1,41 @@
+Dimorphic hemmorhoids(piles)#               General surgeon
+Varicose veins              #               Dermatologist
+Hyperthyroidism             #               Endocrinologist
+Chronic cholestasis         #               Gastroenterologist 
+Hepatitis D                 #               Gastroenterologist 
+Alcoholic hepatitis         #               Gastroenterologist 
+Hepatitis E                 #               Gastroenterologist
+Typhoid                     #               General surgeon
+Drug Reaction               #               Allergist
+Hypertension                #               Cardiologist
+Pneumonia                   #               Pulmonologist
+Tuberculosis                #               Pulmonologist
+Hypoglycemia                #               Endocrinologist
+Dengue                      #               Infectious diseases
+Migraine                    #               Neurologist
+Fungal infection            #               Dermatologist
+Arthritis                   #               Rheumatologist
+hepatitis A                 #               Gastroenterologist
+Paralysis(brain hemorrhage) #               Neurologist
+Impetigo                    #               Dermatologist
+Acne                        #               Dermatologist
+Malaria                     #               Infectious diseases
+Cervical spondylosis        #               Neurologist
+Chicken pox                 #               Infectious diseases
+Common Cold                 #               Paediatrician
+Hypothyroidism              #               Endocrinologist
+Gastroenteritis             #               Gastroenterologist
+Psoriasis                   #               Dermatologist
+Urinary tract infection     #               Urologist
+AIDS                        #               Infectious diseases
+Hepatitis C                 #               Gastroenterologist
+Allergy                     #               Allergist
+Hepatitis B                 #               Gastroenterologist
+Peptic ulcer disease        #               Gastroenterologist
+Heart attack                #               Cardiologist
+Bronchial Asthma            #               Pulmonologist
+Diabetes                    #               Endocrinologist
+Jaundice                    #               Gastroenterologist
+Paroymsal Positional Vertigo(vertigo) #      Neurologist
+Osteoarthristis                       #     Orthopedist
+GERD                                  #     Gastroenterologist

@@ -1,0 +1,129 @@
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<html lang="en">
+   <link href="{% static 'Users/blog-post.css' %}" rel="stylesheet">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Antidote</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-post.css" rel="stylesheet">
+
+</head>
+
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          {% if user.is_authenticated %}
+     <a class="navbar-brand" href="{% url 'base' %}">
+      {% else %}
+      <a class="navbar-brand" href="{% url 'index' %}">
+      {% endif %}
+
+     <img src="{% static 'users2/logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'describe_prediction' %}">Predictions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'describe_doctor' %}">Doctors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'describe_prescription' %}">Prescriptions</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="{% url 'login' %}">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'reg' %}">Register</a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+<body>
+
+  
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">Reports</h1>
+
+        <!-- Preview Image --><br>
+        <img class="" src="{% static 'Users/reportimg.jpg' %}" width="900" height="500" alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+        <p>This feature will help the patient to upload their medical reports.It will help to overcome the the challenges faced by the people to keep a record of all their previous reports as manually keeping record of all medical reports can be a cumbersome process for many people.There are some diseases which require constant track of previous medical reports as doctor needs to see whole medical background of that person.The best example of this is diabetes,as for prescribing any medicine, doctor also needs to know what were the results of the previous test. Therefore, developing a feature to store previous reports will make the life of users easy and comfortable.This feature is not compulsory for every user to access, it’s an optional feature provided to users for their comfort.</p>
+
+
+
+
+
+        <blockquote class="blockquote">
+          <p class="mb-0"><u>Steps to upload reports: </u></p>
+        </blockquote>
+<p>
+  <li>After logging into the portal, the patient will have to navigate to the Reports tab which requires the patient to upload his reports.</li>
+<li>The GUI of this section would provide the patient to select from where he wants to upload his reports like from his device, from dropbox or from google drive.</li>
+<li>Then the patient will select the particular report which he wants to upload.</li>
+<li>Patient also need to name this report and also provide a brief description.</li>
+<li>If patient wants to send the report to doctor, he/she can simply send it by selecting the doctor and clicking on send button.</li>
+<li>The patient also has a choice to delete the report.</li>
+
+        <hr>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+<br>
+<footer class="container">
+  <p>&copy; Antidote {% now "Y" %}</p>
+</footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>

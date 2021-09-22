@@ -1,0 +1,110 @@
+{% extends "Users/layout.html" %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+    <h2 class="heading"> <i>A track of your medical history</i></h2>
+    <hr><hr>
+    <h1>Upload Files:</h1>
+    <form enctype="multipart/form-data" method="POST" action="">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" value="Upload" class="btn btn-primary"/>
+    </form>
+
+    <br><br>
+
+<h1>Already Uploaded Files:</h1>
+ <div class="row">
+  {% for file in lastfile %}
+
+<div class="col-sm-6">
+    <br>
+<div class="card">
+  <h5 class="card-header"><strong>Name of the report: </strong><a href="{{ MEDIA_URL }}{{ file.filepath }}" target="_blank"> {{ file.name }}</a> </h5>
+  <div class="card-body">
+    <h6 class="card-title"><strong>Description: </strong>{{ file.Description }}</h6>
+    <br>
+    <p class="card-text">Select the doctor:</p>
+    <form method="POST" action="{% url 'send' file.id %}">
+        {% csrf_token %}
+        {% for val,text in Send.Doctors.field.choices %}
+            <input type="checkbox" class = "file_{{ file.id }}" name="file_{{file.id}}" value="{{val}}" >
+            <label > <strong>{{text}} &nbsp;&nbsp;&nbsp;</strong> </label>
+        {% endfor %}
+    {% if Send.Doctors.field.choices|length > 0 %}
+        &nbsp;&nbsp;&nbsp;<input type="submit" value="Send" class="btn btn-primary"/>
+        {% else %}
+        Add Treatments to be able to send Files
+        {% endif %}
+        </form>
+        <br>
+        <a class="btn btn-primary" href="{{ MEDIA_URL }}{{ file.filepath }}" target="_blank">View Report</a>
+        <a class="btn btn-danger" href="{% url 'delete_report' file.id %}">Delete Report</a>
+        
+  </div>
+</div>
+</div>
+<br>
+{% endfor %}
+<br>
+</div>
+
+   <!--  <h1>Already Uploaded Files:</h1>
+ 
+    {% for file in lastfile %}
+
+    <a href="{{ MEDIA_URL }}{{ file.filepath }}" target="_blank">{{ file.name }}</a>
+<p>{{ file.Description }}</p>
+    <form method="POST" action="{% url 'send' file.id %}">
+        {% csrf_token %}
+        {% for val,text in Send.Doctors.field.choices %}
+            <input type="checkbox" class = "{{ file.name }}" name="file_{{file.id}}" value="{{val}}" >
+            <label > {{text}} </label>
+        {% endfor %}
+
+        <input type="submit" value="Send" class="btn btn-primary btn-sm"/>
+    </form>
+    <br>
+
+        {% if Send.Doctors.field.choices|length > 0 %}
+        <input type="submit" value="Send" class="btn btn-primary"/>
+        {% else %}
+        Add Treatments to be able to send Files
+        {% endif %}
+    </form>
+    <a href="{% url 'delete_report' file.id %}">Delete Report</a><br><br>
+<hr>
+    {% endfor %}
+    <br><br>
+    </p> -->
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let id_list = []
+        {% for file in lastfile %}
+            id_list = []
+            {% for doc in file.Doctors.all %} 
+                id_list.push("{{ doc.id }}")
+            {% endfor%}
+                console.log(id_list)
+                console.log("{{file.name}}")
+            document.querySelectorAll(".file_{{file.id}}").forEach(function(check){
+                console.log(check.value)
+                console.log(id_list)
+                if(id_list.includes(check.value)){
+                    console.log("here")
+                    check.checked = true
+                }
+            })
+        {% endfor %}
+
+
+    })
+    </script>
+
+    {% for message in messages %}
+    <script>alert("{{ message }}")</script>
+    {% endfor %}
+
+{% endblock %}
+

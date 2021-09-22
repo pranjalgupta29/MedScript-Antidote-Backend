@@ -1,0 +1,142 @@
+{% extends "Users/layout.html" %}
+
+{% block body %}
+<div class="container">
+    <br><br>
+    <h1 class="heading">Active Treatments</h1>
+
+<br>
+    <table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Patient's Name</th>
+      <th scope="col">Doctor's Name</th>
+      <th scope="col">Disease</th>
+      <th scope="col">Treatment Id</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for Treat in active %}
+<!--         <a href="{% url 'Treat' Treat.id %}">{{Treat.id}}</a> -->
+    
+    <tr>
+      <th scope="row">{{ Treat.Patient.Name }}</th>
+      <td>{{ Treat.Doctor.Name }}</td>
+      <td>{{ Treat.Disease }}</td>
+      <td>{{Treat.id}}</td>
+      <td><a href="{% url 'Treat' Treat.id %}">View Treatment</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<!-- 
+    {% for Treat in active %}
+        <a href="{% url 'Treat' Treat.id %}">{{Treat.id}}</a>
+        <h3>{{ Treat.Patient.Name }} and {{ Treat.Doctor.Name }}</h3>
+    {% endfor %}
+     -->
+    <br><br>
+    <h1 class="heading">New Treatment Requests</h1>
+
+<br>
+    <table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Patient's Name</th>
+      <th scope="col">Disease </th>
+      <th scope="col">Doctor's Name</th>
+      <th scope="col">Status</th>
+      
+      
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+     {% for Treat in new %}
+      <th scope="row">{{ Treat.Patient.Name }} </th>
+      <td>{{ Treat.Disease }}</td>
+      {% if Treat.Doctor %}
+    <td>{{ Treat.Doctor.Name }}</td>
+      <td>Request Sent</td>
+
+       {% else %}
+        <td>{{ Treat.Doctor.Name }}</td>
+      <td><a href="{% url 'Doctor_list' Treat.id %}"> Add Doctor</a></td>
+{% endif %}
+    </tr>
+       {% endfor %}
+  </tbody>
+</table>
+
+<!-- 
+
+    {% for Treat in new %}
+        <h3>{{ Treat.Patient.Name }} 
+            {% if Treat.Doctor %}
+                and {{ Treat.Doctor.Name }}
+                <p>Request sent</p>
+            {% else %}
+            : {{ Treat.Disease }}
+            <a href="{% url 'Doctor_list' Treat.id %}"> Add Doc</a> <br>
+            {% endif %}
+
+        </h3>
+    {% endfor %}
+     -->
+    <br><br>
+
+    <h1 class="heading">Completed Treatments</h1>
+    <br>
+
+
+
+    <table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Patient's Name</th>
+      <th scope="col">Disease </th>
+      <th scope="col">Doctor's Name</th>
+      <th scope="col">Treatment Id</th>
+      
+      
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+     
+    {% for Treat in completed %}
+      <th scope="row">{{ Treat.Patient.Name }} </th>
+      <td>{{ Treat.Disease }}</td>
+      <td>{{ Treat.Doctor.Name }}</td>
+      <td>{{ Treat.id }}</td>
+      <td><a href="{% url 'Treat' Treat.id %}">View Treatment</a></td>
+    </tr>
+   {% endfor %}
+  </tbody>
+</table>
+
+
+<!-- 
+    {% for Treat in completed %}
+        <a href="{% url 'Treat' Treat.id %}">{{Treat.id}}</a>
+        <h3>{{ Treat.Patient.Name }} and {{ Treat.Doctor.Name }}</h3>
+    {% endfor %}
+     -->
+    <br><br>
+ 
+    {% for Treat in rejected %}
+        <script> 
+            alert("Treatment with {{ Treat.Doctor }} for {{ Treat.Disease}} was Rejected")
+            fetch(`{% url 'Delete_Treatment' Treat.id%}`)
+            .then(response => response.text())
+            .then(data => {
+            })
+        </script>
+    {% endfor %}
+    <br><br>
+    </p>
+</div>
+{% endblock %}

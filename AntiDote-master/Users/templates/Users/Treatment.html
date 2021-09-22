@@ -1,0 +1,182 @@
+{% extends "Users/layout.html" %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+
+     <div class="row">
+  <div class="col-sm-8">
+    <div class="card">
+         {% if request.user.is_patient %}
+        <h5 class="card-header"><strong>Doctor : </strong>{{ Treatment.Doctor }}</h5>
+        {% else %}
+        <h5 class="card-header"><strong>Patient : </strong>{{ Treatment.Patient }}</h5>
+        {% endif %}
+      <div class="card-body">
+        <h6 class="card-title"><strong>Disease : </strong>{{ Treatment.Disease }}</h6>
+        <h6 class="card-title"><strong>Symptoms : </strong></h6>
+         <ul>
+    {% for sym in Treatment.SymptomList.all %}
+        <li>{{ sym.Name }}</li>
+    {% endfor %}
+      </div>
+    </div>
+</div>
+</div>
+    <br>
+    <div class="row">
+        <div class="col-sm-8">
+        <div class="card">
+            <h5 class="card-header"><strong>Reports</strong></h5>
+            {% if files %}
+                {% for file in files %}
+                    <div class="card-body">
+                    <h6 class="card-title"><strong>Name : </strong>{{ file.name }}</h6>
+                    <h6 class="card-title"><strong>Description : </strong>{{file.Description}}</h6>
+                    <a href="{{ MEDIA_URL }}{{ file.filepath }}" target="_blank" class="btn btn-primary btn-sm">View</a>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="card-body">
+                    <h6 class="card-title"><strong>No Reports Shared</strong></h6>
+                </div>
+            {% endif %}
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+
+<div class="center">
+<div class="row">
+        <div class="col-sm-8">
+        <div class="card">
+        <h5 class="card-header"><strong>Appointment</strong></h5>
+         {% if Treatment.Appointment %}
+        <div class="card-body">
+        <h6 class="card-title"><li>Your appointment is fixed on <strong>{{ Treatment.Appointment }}</strong></li></h6>
+        {% if request.user.is_patient %}
+            <h6 class="card-title"><li>Doctor's Email : <strong>{{ Treatment.Doctor.user.email }}</strong></li></h6>
+            <h6 class="card-title"><li>Doctor's contact number : <strong>{{ Treatment.Doctor.contact }}</strong></li></h6>
+        {% endif %}
+        {% else %}
+        <h6 class="card-title"><strong><br>&nbsp;&nbsp;&nbsp;&nbsp;No Appointment<br></strong><br></h6>
+        {% endif %}
+    </div>
+    </div>
+      </div>
+  </div>
+</div>
+
+{% if request.user.is_doctor %}
+<div class="center">
+    <form action="{% url 'Add_Appointment' Treatment.id %}" method="POST">
+        {% csrf_token %}
+        {{Appoint_Form|crispy}}
+        <input type="submit" value="Add Appointment" class="btn btn-primary">
+    </form>
+    {% endif %}
+</div>
+
+<div class="center">
+          <div class="row">
+        <div class="col-sm-8">
+        <div class="card">
+        <h5 class="card-header"><strong>Prescription</strong></h5>
+        <div class="card-body">
+        <div id="Presc">
+            {% if Treatment.Prescription %}
+        <h6 class="card-title"> {{ Treatment.Prescription }}</h6>
+        {% else %}
+ <h6 class="card-title">No Prescription</h6>
+{% endif %}
+
+
+{% if request.user.is_doctor %}     
+        <br>
+        <button id="Pbtn" data-val="{{ Treatment.id }}" class="btn btn-primary">Edit</button>
+    {% endif %}
+  </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+    <br><br><br><br>
+    <hr>
+    {% for question in Treatment.Questions.all %}
+            Question : {{ question.Question }} <br><br>
+            {% if question.Is_Answered %}
+                Reply : {{ question.Answer }}<br><br>
+                {% if  question.Made_By == user %}
+                    <a class="btn btn-primary" href="{% url 'delete_Question' question.id %}">Delete Question</a>
+                    <br>
+                {% endif %}
+            {% else %}
+                {% if  question.Made_By != user %}
+
+                    <form action="{% url 'Add_Answer' Treatment.id question.id %}" method="POST">
+                        {% csrf_token %}
+                        {{A_Form | crispy}}
+                        <input type="submit" value="Add Answer" class="btn btn-primary">
+                    </form>
+                {% endif %}
+                
+            {% endif %}
+            <hr>
+            <br>
+    {% endfor %}
+
+    <br>
+    {% if not Treatment.is_completed %}
+    <form action="{% url 'Add_Question' Treatment.id %}" method="POST">
+        {% csrf_token %}
+        {{Q_Form | crispy}}
+        <input type="submit" value="Add Question" class="btn btn-primary">
+    </form>
+    {% endif %}
+
+    <br><br><br>
+    {% if request.user.is_patient and Treatment.is_completed %}
+        <form method="post" action="{% url 'Delete_Treatment' Treatment.id%}">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary">Delete Treatment</button>
+        </form>    
+    {% endif %}
+
+    {% if request.user.is_doctor %}
+        {% if not Treatment.is_completed %}
+            <form method="post" action="{% url 'Complete_Treatment' Treatment.id %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-primary">Treatment Completed</button>
+            </form>
+        {% endif %}
+    {% endif %}
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+
+            function EditPresc(id){               
+            fetch(`/edit_Presc/${id}`)
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('#Presc').innerHTML = data
+            })
+            return false
+        }
+
+            document.querySelector("#Pbtn").addEventListener('click', function(event){
+                // event.preventDefault()
+                id = this.dataset.val
+                console.log(id)
+                EditPresc(id)
+            })
+        })
+    </script>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+body {
+    padding: 10px;
+}
+
+.heading{
+    font-weight: bold;
+    text-align: center;
+    font-size: 4vmax;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.center {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+  }
+
+.img{
+    float: left;
+    margin-right: 5%;
+    height: 90%;
+    width: 20%;
+    border: gray;
+    border-style: double;
+    border-width: 5px;
+}
+
+.item{
+    height: 30vh;
+}
+
+hr{
+    box-shadow: 0 10px 10px -10px #8c8c8c inset;
+}
+.text{
+    font-size: larger;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.etext{
+    font-size: xx-large;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.link :hover{
+    font-size: x-large;
+}

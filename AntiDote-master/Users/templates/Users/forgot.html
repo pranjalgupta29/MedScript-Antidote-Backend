@@ -1,0 +1,16 @@
+{% extends "Users/layout.html" %}
+{% load crispy_forms_tags %}
+{% block body %}
+    <br><br>
+    <h1 class="heading">{{message}}</h1>
+    <form action="", method="POST">
+        {% csrf_token %}
+        {{form|crispy}}
+        <input type="submit" value="{{name}}" class="btn btn-primary"/>
+    </form>
+
+
+    {% if alert %}
+        <script>alert("{{ alert }}")</script>
+    {% endif %}
+{% endblock %}

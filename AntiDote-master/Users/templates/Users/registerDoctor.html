@@ -1,0 +1,93 @@
+{% extends "Users/layout.html" %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+    <h1 class ="heading" align="center">Register</h1>
+
+    {% if message %}
+        <div>{{ message }}</div>
+    {% endif %}
+
+    <form action = "{% if d %} {% url 'registerDoctor' %} {% else %} {% url 'register' %} {% endif %} " method="post">
+        {% csrf_token %}
+         <div class="col-10">
+        {{ register.email|as_crispy_field}}
+        {{ register.password1|as_crispy_field}}
+        {{ register.password2|as_crispy_field}}
+
+        <input type="radio" class="radio" id="patient" checked name="Type" data-value=1>
+        <label for="patient">Patient</label>
+        <input type="radio" class="radio" id="doctor" {% if d %} checked {% endif %} name="Type" data-value=2>
+        <label for="doctor">Doctor</label><br>
+
+        <div id="form">
+           
+            {{ form.Name|as_crispy_field}}
+            {{ form.Age|as_crispy_field}}
+            {{ form.Address|as_crispy_field}}
+            {{ form.Gender|as_crispy_field}}
+            
+        </div>
+        
+<br>
+        <input class="btn btn-primary" id="su" type="submit" value="Register" class="btn btn-primary">
+
+</div>
+<br>
+    </form>
+    &nbsp;&nbsp;&nbsp;Already have an account? <a href="{% url 'login' %}">Log In here.</a>
+<br>
+<br>
+    <script>
+        function showForm(id){
+            if(id == 1)
+                document.querySelector('form').action = "{% url 'register' %}"
+            else{
+                    document.querySelector('form').action = "{% url 'registerDoctor' %}"
+                    getLocation()
+                    document.querySelector("#su").disabled = true;    
+                }             
+
+            fetch(`rform/${id}`)
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('#form').innerHTML = data
+            })
+        }
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelectorAll('.radio').forEach(function(radio){
+                if(radio.checked == true && radio.dataset.value != 1){
+                    showForm(radio.dataset.value)
+                }
+                radio.onclick = function(){
+                        console.log(this.dataset.value)
+                        showForm(this.dataset.value)
+                        
+                }
+            })
+        })
+
+        
+        function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition,failed);
+                } else {
+                    alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function failed(){
+            alert("Please give permission to use location and refresh website");
+            f = 1;
+        }
+
+        function showPosition(position) {
+            document.querySelector("input[name=lat]").value = (position.coords.latitude).toFixed(6);
+            document.querySelector("input[name=lon]").value = (position.coords.longitude).toFixed(6);
+            alert(`Coords are: ${(position.coords.latitude).toFixed(6)}  ${(position.coords.longitude).toFixed(6)}`);
+            document.querySelector("#su").disabled = false;
+        }
+
+    </script>
+{% endblock %}
